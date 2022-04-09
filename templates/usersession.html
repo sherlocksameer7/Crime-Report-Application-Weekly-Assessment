@@ -1,0 +1,12 @@
+{% extends "base_user.html"%}
+{% block content %}
+
+{% if session.name %}
+<h2>Welcome {{session.name}}</h2>
+Crime is special and separate beat in daily newspapers. They have separate reporters to report crimes. However, crime reporting is part of the objective, interpretative and investigative reporting.
+{% else %}
+Not Yet Login
+{% endif %}
+
+
+{% endblock %}

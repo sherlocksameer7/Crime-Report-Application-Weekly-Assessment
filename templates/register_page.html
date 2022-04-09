@@ -1,0 +1,36 @@
+{% extends "base_user.html" %}
+{% block content %}
+<div class="container">
+    <div class="row"><div class="col col-sm-6 col-md-8 col-lg-10 col-xl-12 col-xxl-12">
+        <form action="/register" method="post"><table class="table">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address" id="" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Email-Id</td>
+                <td><input type="text" name="email" id="" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="phone" id="" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" class="form-control"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-danger">Register</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/user">Already have an account</a></td>
+            </tr>
+        </table></form>
+    </div></div></div>
+    {% endblock %}

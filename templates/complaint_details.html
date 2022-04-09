@@ -1,0 +1,21 @@
+{% extends "base_user.html" %}
+{% block content %}
+<div class="container">
+    <div class="row"><div class="col col-sm-6 col-md-8 col-lg-10 col-xl-12 col-xxl-12">
+<form action="/complaint" method="post"><table class="table">
+<tr>
+    <td>Description</td>
+    <td><input type="text" name="description" class="form-control"></td>
+</tr>
+<tr>
+    <td>Remarks</td>
+    <td><input type="text" name="remark" class="form-control"></td>
+</tr>
+<tr>
+    <td></td>
+    <td><button type="submit" class="btn btn-primary">Complain</button></td>
+</tr>
+  </table>
+</form>
+  </div></div></div>
+  {% endblock %}
